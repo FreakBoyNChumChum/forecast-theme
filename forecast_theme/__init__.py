@@ -22,8 +22,9 @@ is shaped to make that the easy path.
 
 from __future__ import annotations
 
-from . import export, launcher_prefs, testing
+from . import export, launcher_prefs, potree, testing
 from .launcher_prefs import resolve_app_path, resolve_app_root
+from .potree import find_cloud_file, launch_potree, setup_potree_bridge
 from .derive import alpha, ink_on, mix
 from .geometry import (
     COMFORTABLE,
@@ -61,7 +62,7 @@ from .palette import (
 )
 from .sheet import CONTRACT_NAMES, base_qss, tone_rules
 
-__version__ = "1.1.0"
+__version__ = "1.2.0"
 
 __all__ = [
     # palette
@@ -78,6 +79,7 @@ __all__ = [
     "base_qss", "tone_rules", "CONTRACT_NAMES",
     # non-Qt surfaces
     "testing", "export", "launcher_prefs", "resolve_app_path", "resolve_app_root",
+    "potree", "find_cloud_file", "setup_potree_bridge", "launch_potree",
     "__version__",
 ]
 
